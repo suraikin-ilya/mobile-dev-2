@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/currencyFragment">
+
+    <fragment
+        android:id="@+id/currencyFragment"
+        android:name="com.example.currencyconv.ui.fragment.CurrencyFragment"
+        android:label="fragment_currency"
+        tools:layout="@layout/fragment_currency">
+        <action
+            android:id="@+id/action_currencyFragment_to_exchangeFragment"
+            app:destination="@id/exchangeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exchangeFragment"
+        android:name="com.example.currencyconv.ui.fragment.ExchangeFragment"
+        android:label="fragment_exchange"
+        tools:layout="@layout/fragment_exchange">
+        <argument
+            android:name="currency1"
+            app:argType="string" />
+        <argument
+            android:name="currency2"
+            app:argType="string" />
+        <argument
+            android:name="value1"
+            app:argType="float" />
+        <argument
+            android:name="value2"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.currencyconv.ui.fragment.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history"/>
+</navigation>

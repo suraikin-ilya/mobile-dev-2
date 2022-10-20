@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CurrencyConv</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history">History</string>
+    <string name="currency">Currency</string>
+    <string name="date">date</string>
+    <string name="currency1">currency1:</string>
+    <string name="currency2">currency2:</string>
+    <string name="value1">value1</string>
+    <string name="value2">value2</string>
+    <string name="all_time">All Time</string>
+    <string name="exchange">Exchange</string>
+    <string name="by_currencies">By Currencies</string>
+</resources>
